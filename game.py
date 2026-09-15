@@ -17,10 +17,11 @@ def main():
     goblin2 = Goblin("Sribble")
     
     print(f"{goblin2.name} enters the arena with {goblin2.health} health.")
+   
 
     print(f"{hero.name} enters the arena with {hero.health} health")
     
-
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     print(f"{hero.name} is fighting {goblin.name}")
     herodamage=hero.attack()
     hero.battle_cry()
