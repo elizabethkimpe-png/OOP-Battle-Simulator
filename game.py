@@ -23,6 +23,7 @@ def main():
 
     print(f"{hero.name} is fighting {goblin.name}")
     herodamage=hero.attack()
+    hero.battle_cry()
     goblin.take_damage(herodamage)
     if hero.health>0:
         print(f"{goblin.name} still alive!")
