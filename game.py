@@ -19,12 +19,13 @@ def main():
     print(f"{goblin2.name} enters the arena with {goblin2.health} health.")
 
     print(f"{hero.name} enters the arena with {hero.health} health")
+    
 
     print(f"{hero.name} is fighting {goblin.name}")
     herodamage=hero.attack()
     goblin.take_damage(herodamage)
     if hero.health>0:
-        print("Hero still alive!")
+        print(f"{goblin.name} still alive!")
         goblindamage=goblin.attack()
         hero.take_damage(goblindamage)
 

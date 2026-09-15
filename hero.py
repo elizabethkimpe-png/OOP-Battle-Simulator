@@ -11,3 +11,5 @@ class Hero:
         print(f"{self.name} takes {damage} damage. Health: {self.health}")
     def is_alive(self):
         return self.health>0
+    def battle_cry(self):
+        print("I am no man!")
