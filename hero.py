@@ -13,5 +13,7 @@ class Hero:
         return self.health>0
     def battle_cry(self):
         battle_cry=print("I am no man!")
+    def gold(self):
+        Hero.gold=100
        
         
