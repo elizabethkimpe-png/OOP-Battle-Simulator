@@ -1,5 +1,7 @@
 from goblin import Goblin
 from hero import Hero
+from boss import Boss
+
 
 ARENA_NAME = "The Iron Square"
 
@@ -11,6 +13,7 @@ def main():
     print("The gates are opening...")
 
     goblin = Goblin("Gribble")
+    boss=Boss("Leah")
     hero=Hero("Eowyn")
 
     print(f"{goblin.name} enters the arena with {goblin.health} health.")
@@ -30,6 +33,19 @@ def main():
         print(f"{goblin.name} still alive!")
         goblindamage=goblin.attack()
         hero.take_damage(goblindamage)
+        
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    print(f"{hero.name} is fighting {boss.name}")
+    herodamage=hero.attack()
+    hero.battle_cry()
+    boss.take_damage(herodamage)
+    if hero.health>0:
+        print(f"{boss.name} still alive!")
+        bossdamage=boss.attack()
+        boss.PlayGuitar()
+        hero.take_damage(bossdamage)
+        boss.take_damage(herodamage)
+    
 
 
 
